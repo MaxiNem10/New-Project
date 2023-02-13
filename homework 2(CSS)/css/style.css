@@ -1,0 +1,47 @@
+p {
+    color: red;
+    text-shadow: 10px 10px 6px;
+    font-size: xx-large;
+    text-align: center;
+}
+h1 {
+    color: rgb(100,0,100);
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #ffffff;
+    background: gold;
+    display: inline-block;
+    padding-top: 1em;
+    /*--padding-left:5em;*/
+    border:solid;
+    border-width:10px;
+    border-color: white;
+    border-style: groove;
+    position: relative;
+    top: 10px;
+    left: 15px;	
+}
+h2 {
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #ff00ff;
+    text-shadow: 10px 10px 3px #4d4644;
+    font-size: xx-large;
+    display: inline-block;
+    border: dashed black;
+}
+h3 {
+    color: orange;
+    /*font-size: xx-large;*/
+    /*font-style: italic;*/
+    text-shadow: 10px 10px 6px;
+}
+body {
+    /*background-image:url(https://img.freepik.com/free-vector/abstract-background-consisting-of-colorful-arcs-illustration_456031-149.jpg?w=2000);*/
+    text-transform: capitalize;
+    
+    display: flex;
+    flex-wrap: wrap;
+    border: solid blue; 
+}	
