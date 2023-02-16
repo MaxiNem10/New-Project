@@ -3,6 +3,7 @@
     }
     .container {
         display:flex;
+        flex-wrap: wrap;
         /*border: solid, white;*/
         
         }
@@ -40,7 +41,10 @@
             main {
                 display: inline-block;
                 width: 70%
-                    
+            }
+            aside {
+                width: 45%
+            }                
     }
 }
     
