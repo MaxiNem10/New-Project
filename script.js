@@ -1,4 +1,4 @@
-let Menu = [
+let Menu =     [
     {
         MenuOnMonday: [{
         title1:'Суп Шулэн',
@@ -43,9 +43,76 @@ let Menu = [
         price4: '50 руб за 200 гр.',    
         }],
    },                
-];    
+   {
+    MenuOnThirsday: [{
+    title1:'Суп Шулэн',
+    sostav1: ['Лапша', 'мясо', 'картошка'],
+    price1: ['100 руб за 200 гр.', '200 руб за 400 гр.'],    
+    },
+    {
+   title2:'Буузы',
+    sostav2: ['Тесто', 'фарш говяжий', 'фарш свиной', 'лук'],
+    price2: ['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
+    },
+    {
+    title3:'Цуйван',
+    sostav3: ['Лапша', 'мясо', 'перец болгарский', 'лук'],
+    price3: ['150 руб за 200 гр.', '250 руб за 400 гр.'],    
+    },
+    {
+    title4:'Морс',
+    sostav4: ['Вода', 'ягода',],
+    price4: '50 руб за 200 гр.',    
+    }],
     
-    let monitor = Menu[0]. MenuOnMonday[3]. sostav4[1];  
-console.log(monitor); 
-let title2 = Menu[0]. MenuOnTuesday[2]. sostav3[2];
-console.log(title2);
+    },
+    {
+        MenuOnWendsday: [{
+        title1:'Суп Шулэн',
+        sostav1: ['Лапша', 'мясо', 'картошка'],
+        price1: ['100 руб за 200 гр.', '200 руб за 400 гр.'],    
+        },
+        {
+       title2:'Буузы',
+        sostav2: ['Тесто', 'фарш говяжий', 'фарш свиной', 'лук'],
+        price2: ['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
+        },
+        {
+        title3:'Цуйван',
+        sostav3: ['Лапша', 'мясо', 'перец болгарский', 'лук'],
+        price3: ['150 руб за 200 гр.', '250 руб за 400 гр.'],    
+        },
+        {
+        title4:'Морс',
+        sostav4: ['Вода', 'ягода',],
+        price4: '50 руб за 200 гр.',    
+        }],
+    },    
+
+];    
+
+ 
+//let Me = Menu[0];
+//console.log(Me);
+
+//let Me2 = Menu[1];
+//console.log(Me2);
+
+//let Me3 = Menu[2];
+//console.log(Me3);
+
+Menu.pop();
+
+console.log(Menu);
+
+//let cars = ['BMW', "Jeep", "Mersedez"];
+
+//cars.pop();
+
+//console.log(cars);
+
+
+//let monitor = Menu[0]. MenuOnMonday[3]. sostav4[1];  
+//console.log(monitor); 
+//let title2 = Menu[0]. MenuOnTuesday[2]. sostav3[2];
+//console.log(title2);
