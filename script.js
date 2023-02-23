@@ -120,8 +120,7 @@ const titel1 = 80 // себестоимость затрат на Шулэн
 let price1 = 100;
 let price2 = [40, 35];
 let price3 = [ 150, 250];
-let vyruchka = `выручка ${price - price2[1]}`;
-console.log(vyruchka);
+
 let dohod = `чистая прибыль с блюда Шулэн ${price1 - titel1} рублей`;
 console.log(dohod);
 
