@@ -3,11 +3,12 @@ let Menu =     [
         MenuOnMonday: [{
         title1:'Суп Шулэн',
         sostav1: ['Лапша', 'мясо', 'картошка'],
+        price1soup: 'стоимость Шулэна 100 рублей' ,
         },
         {
        title2:'Буузы',
         sostav2: ['Тесто', 'фарш говяжий', 'фарш свиной', 'лук'],
-        price2: ['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
+        price2boozy: ['стоимость бууз: 40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
         },
         {
         title3:'Цуйван',
@@ -103,26 +104,24 @@ let Menu =     [
 //console.log(Me3);
 
 
-Menu.pop();
-        
-console.log(Menu);
-
-
+//Menu.pop();       
 //console.log(Menu);
 
 
-Menu.unshift(`MenuOnTuesday`);
-console.log(Menu);
+//Menu.unshift(`MenuOnTuesday`);
+//console.log(Menu);
 
 
 const titel1 = 80 // себестоимость затрат на Шулэн 
 
-let price1 = 100;
-let price2 = [40, 35];
-let price3 = [ 150, 250];
-let vyruchka = `выручка ${price - price2[1]}`;
-console.log(vyruchka);
+let price1 = 100; // цена за Шулэн
+let price2 = [40, 35]; // цена за Буузы готовые и замороженные
+let price3 = [ 150, 250]; // цена за Цуйван 150 гр и 250 гр.
+
+let price1soup = Menu[0].MenuOnMonday[0]. price1soup;
+console.log(price1soup);
 let dohod = `чистая прибыль с блюда Шулэн ${price1 - titel1} рублей`;
+
 console.log(dohod);
 
 
