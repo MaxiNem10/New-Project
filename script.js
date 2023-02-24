@@ -127,12 +127,11 @@ console.log(price1soup);
 console.log(price1boozy);
 console.log(price1cuyvan);
 
-let price1 = 100;
-let price2 = [40, 35];
-let price3 = [ 150, 250];
-let vyruchka = `выручка ${price - price2[1]}`;
-console.log(vyruchka);
-let dohod = `чистая прибыль с блюда Шулэн ${price1 - titel1} рублей`;
+let dohod = `чистая прибыль с блюда Шулэн ${price1 - titel1} рублей
+чистая прибыль с бууз ${price2[0]- title2} рублей
+чистая прибыль с замороженных бууз ${price2[1]-title2} рублей
+чистая прибыль с блюда Цуйван со 150 грамм ${price3[0]-title3} рублей;
+чистая прибыль с блюда Цуйван с 250 грамм ${price3[1]-title3} рублей`
 console.log(dohod);
 
 
