@@ -1,4 +1,4 @@
-let продал = 100;
+let продал = prompt ('Сколько продал');
 let resulet = (продал > 50) ? 'Молодец' : 'бездарный' ; 
 console.log(resulet);
 
