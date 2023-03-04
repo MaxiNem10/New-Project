@@ -20,5 +20,6 @@ if (questions2 == 1945) {
 else {
     alert ('Историю надо знать');
 }
+let finish 
 console.log(questions); 
 console.log(questions2);
