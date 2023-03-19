@@ -120,7 +120,7 @@ let price1 = 100; // цена за Шулэн
 let price2 = [40, 35]; // цена за Буузы готовые и замороженные
 let price3 = [ 150, 250]; // цена за Цуйван 150 гр и 250 гр.
 
-let price1soup = Menu[0].MenuOnMonday[0].price1soup;
+let price1soup = Menu[0].MenuOnMonday[0].price1soup; // изменеие проверка
 let price1boozy = Menu[0].MenuOnMonday[1].price2boozy;
 let price1cuyvan = Menu[0].MenuOnMonday[2].price3cuyvan;
 console.log(price1soup);
