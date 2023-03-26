@@ -159,7 +159,16 @@ Menu[i].profit = Menu[i].price - Menu[i].priceCooking;
 console.log(`Созданный массив из объектов блюд с профитом: ${JSON.stringify(Menu)}`);
 //console.log(Menu)
 
+// В задании к предыдущему уроку в пункте 3 создайте локальные переменные внутри цикла и запишите в них строку с основной информацией по блюду,
+// которую вы бы поместили в печатное меню.
+  
+  let allDescriptionMenu = '';
 
+  for (let i = 0; i < Menu.length; i++) {
+      let description = `Название блюда: ${Menu[i].title}; Стоимость: ${Menu[i].price}\n`;
+      allDescriptionMenu += description;
+  };
+  console.log(`Меню:\n${allDescriptionMenu}`);
 
 
 // let pancakesWithJam = {
