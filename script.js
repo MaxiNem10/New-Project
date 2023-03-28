@@ -1,13 +1,17 @@
-let helloMessage
-
-function setSayHello(name) {
-  helloMessage = 'Привет, ' + name + '!'; // запишет в переменную helloMessage Привет + имя
+// Напишите функцию принимающую два числа и возвращающую меньшее из них.
+let a = prompt ('Введите число а');
+let b = prompt ('Введите число b');
+function naimenshee(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
 }
+//console.log(a)
+//console.log(b)
+let vivod = naimenshee(a,b);
+console.log(vivod)
 
-setSayHello('Иван'); // запишет в helloMessage 'Привет, Иван!'
 
-alert(helloMessage); // выведет 'Привет, Иван!'
-
-setSayHello('Олег'); // запишет в helloMessage 'Привет, Олег!'
-
-alert(helloMessage); // выведет 'Привет, Олег!'
+//Напишите функцию, которая будет считать профит от продажи блюда из прошлого задания. В эту функцию должны передаваться все данные для расчета профита, результат расчетов присвойте в объект блюда.
