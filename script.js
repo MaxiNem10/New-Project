@@ -1,4 +1,7 @@
 //Напишите функцию, которая будет считать профит от продажи блюда из прошлого задания. В эту функцию должны передаваться все данные для расчета профита, результат расчетов присвойте в объект блюда.
+function profit (price, priceCooking) {
+return price - priceCooking;
+}
 
 let food1 = {
   title:'Суп Шулэн',
@@ -8,7 +11,7 @@ let food1 = {
 };
 let food2 = {
   title:'Буузы',
-  sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+  sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
   priceCooking: 0,
   price: 250, //'стоимость бууз: 40 руб за 1 шт., 35 руб за 1 шт. замороженные',      
 };
@@ -27,21 +30,21 @@ let food4 = {
 
 let food5 = {
   title:'Борщ',
-  sostav: ['Капуста', 'мясо курицы', 'картошка'],
+  sostav: ['Капуста', 'мясокурицы', 'картошка'],
   priceCooking: 0,
   price:  120, //['120 руб за 200 гр.', '220 руб за 400 гр.'],    
 };
 let food6 = { 
   title:'Пельмени',
-  sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+  sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
   priceCooking: 0,
-  price: 100, //['100 руб за 120 гр.', '200 руб за 240 гр.'],    
+  price: 300, //['100 руб за 120 гр.', '200 руб за 240 гр.'],    
 };
 let food7 = {      
   title:'Пюре с котлетой',
-  sostav: ['Картошка', 'фарш', 'подлив', 'лук'],
+  sostav: ['картошка', 'фаршговяжий', 'подлив', 'лук'],
   priceCooking: 0,
-  price: 130, //['130 руб за 200 гр.', '260 руб за 400 гр.'],    
+  price: 230, //['130 руб за 200 гр.', '260 руб за 400 гр.'],    
 };
 let food8 = {
   title:'Чай',
@@ -58,7 +61,7 @@ let food9 = {
 };
 let food10 = { 
   title:'Буузы',
-  sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+  sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
   priceCooking: 0,
   price: 40, //['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
 };
@@ -83,7 +86,7 @@ let food13 = {
 };
 let food14 = {  
   title:'Буузы',
-  sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+  sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
   priceCooking: 0,
   price: 40, // ['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
 };
@@ -104,7 +107,7 @@ let food16 = {
 let Menu = [
 food1,  food2, food3,  food4,  food5,  food6,
 food7,  food8, food9,  food10, food11, food12,
-food13, food14, food15, food15, food16,
+food13, food14, food15, food16,
 ] ;    
 
 
@@ -125,9 +128,35 @@ let sostavprice = {
 мясокурицы: 70,
 пакетикчая: 5,
 подлив: 2,
+}
 
+ 
+ 
+ 
+ for (let i=0; i < Menu.length; i++) {
+   let sum = 0;
+       for (let j=0; j < Menu[i].sostav.length; j++) {
+           sum += sostavprice  [Menu[i].sostav[j]];
+        
+       Menu[i].priceCooking = sum;
+      
+       for (let i = 0; i < Menu.length; i++) {
+         Menu[i].profit = Menu[i].price - Menu[i].priceCooking;
+       };
+ 
+    }
+   }
+  
+   console.log(`Созданный массив из объектов блюд с профитом: ${JSON.stringify(Menu)}`);
+
+   let resultText = ''
+//Посчитайте с помощью цикла профит для каждого блюда и запишите его в объект блюда. 
+for (let i = 0; i < Menu.length; i++) {
+    // тут мы применим функцию расчета профита
+    Menu[i].profit = profit(Menu[i].price, Menu[i].priceCooking);
+    resultText += `Блюдо: ${Menu[i].title} ; Прибыль от продажи: ${Menu[i].profit}\n`;
 };
- function profit (Menu, sostavprice) {
-  let sum = Menu[i] + sostavprice[j];
- }
- console.log(sum);
+
+alert(resultText);
+    //console.log(`Созданный массив из объектов блюд cо стоимостью: ${JSON.stringify(Menu)}`);
+    //console.log(Menu[15].priceCooking)
