@@ -5,16 +5,32 @@
 //Пары логин и пароль: admin - root, user - 123
 //⭐Для хранения пользователей и паролей используйте объект, где ключом будет имя, а значением пароль.//
 
-const basedata = {
+let basedata = {
   Admin: 'root',
-  User: '123' 
+  User: '123', 
 }
 
 let Login = prompt ('Введите логин');
- if (Login = basedata.Admin && Login == basedata.User ) {
-   alert ('Введите пароль');
- }
- //else if (Login < basedata){
-  //  alert ('Такого пользовалтеля не существует')
- //}
- console.log (Login)
+ if (Login == basedata) {
+  //|| Login === 'User') 
+  
+  let password = prompt ('Введите пароль');
+  if (password == basedata.Admin || password == basedata.User) {
+    alert ('Отлично вы вошли')
+  }
+  else if (password === '' || password === null) {
+    alert( 'Отменено' );
+  } else {
+    alert( 'Неправильный пароль' );
+  }
+}
+ else if (Login === '' || Login === null) {
+  alert( 'Отменено' );
+} else {
+  alert( " Такого пользователя не существует" );
+}
+ //  alert ('Такого пользователя не существует');
+   
+ 
+ 
+ //console.log (Login)
