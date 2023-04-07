@@ -11,8 +11,7 @@ let basedata = {
 }
 
 let Login = prompt ('Введите логин');
- if (Login == basedata) {
-  //|| Login === 'User') 
+ if (Login == 'Admin' || Login === 'User') {
   
   let password = prompt ('Введите пароль');
   if (password == basedata.Admin || password == basedata.User) {
