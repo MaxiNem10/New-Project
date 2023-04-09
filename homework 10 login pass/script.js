@@ -11,7 +11,7 @@ let basedata = {
 }
 
 let Login = prompt ('Введите логин');
- if (basedata[Login] == ) {
+ if (Login === 'Admin' && Login === 'User' ) {
   
   let password = prompt ('Введите пароль');
   if (password == basedata.Admin || password == basedata.User) {
@@ -32,4 +32,4 @@ let Login = prompt ('Введите логин');
    
  
  
- console.log (basedata)
+ console.log (Login)
