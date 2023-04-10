@@ -150,10 +150,16 @@ let sum = 0;
     Menu[i].priceCooking = sum;
 };
 
-console.log(`Созданный массив из объектов блюд cо стоимостью: ${JSON.stringify(Menu)}`);
+//sconsole.log(`Созданный массив из объектов блюд cо стоимостью: ${JSON.stringify(Menu)}`);
 
-for (let i = 0; i < Menu.length; i++) {
-Menu[i].profit = Menu[i].price - Menu[i].priceCooking;
-};
+let sumMenuLenght = Menu[i].reduce(function(price, priceCooking) {
+   
+    return Menu[i].price - Menu[i].priceCooking;
+}, 0);
+console.log(sumMenuLenght);
 
-console.log(`Созданный массив из объектов блюд с профитом: ${JSON.stringify(Menu)}`);
+//for (let i = 0; i < Menu.length; i++) {
+//Menu[i].profit = Menu[i].price - Menu[i].priceCooking;
+//};
+
+//console.log(`Созданный массив из объектов блюд с профитом: ${JSON.stringify(Menu)}`);
