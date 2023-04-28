@@ -1,31 +1,16 @@
-// for (let i = 0; i <= 10; i++) {
-//     if (i % 2 == 0)
-//     console.log(i)
-// }
-
-// for (let i = 1; i < 10; i += 1) {
-//     if (i % 2 !== 0) {
-//       console.log(i);
-//     }
-//   }
-
-  
-
-    
-  
 let food1 = {
     title:'Суп Шулэн',
     sostav: ['Лапша', 'мясо', 'картошка'],
     priceCooking: 0,
     price: 200, // 'стоимость Шулэна 200 рублей' ,
   };
-  let food2 = {
+let food2 = {
     title:'Буузы',
-    sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+    sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
     priceCooking: 0,
     price: 250, //'стоимость бууз: 40 руб за 1 шт., 35 руб за 1 шт. замороженные',      
   };
-  let food3 = {  
+let food3 = {  
     title:'Цуйван',
     sostav: ['Лапша', 'мясо', 'перецболгарский', 'лук'],
     priceCooking: 0,
@@ -40,19 +25,19 @@ let food1 = {
 
   let food5 = {
     title:'Борщ',
-    sostav: ['Капуста', 'мясо курицы', 'картошка'],
+    sostav: ['Капуста', 'мясокурицы', 'картошка'],
     priceCooking: 0,
     price:  120, //['120 руб за 200 гр.', '220 руб за 400 гр.'],    
   };
   let food6 = { 
     title:'Пельмени',
-    sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+    sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
     priceCooking: 0,
     price: 100, //['100 руб за 120 гр.', '200 руб за 240 гр.'],    
   };
   let food7 = {      
     title:'Пюре с котлетой',
-    sostav: ['Картошка', 'фарш', 'подлив', 'лук'],
+    sostav: ['Картошка', 'фаршговяжий', 'подлив', 'лук'],
     priceCooking: 0,
     price: 130, //['130 руб за 200 гр.', '260 руб за 400 гр.'],    
   };
@@ -71,7 +56,7 @@ let food1 = {
   };
   let food10 = { 
     title:'Буузы',
-    sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+    sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
     priceCooking: 0,
     price: 40, //['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
   };
@@ -96,7 +81,7 @@ let food1 = {
   };
   let food14 = {  
     title:'Буузы',
-    sostav: ['Тесто', 'фарш говяжий', 'фаршсвиной', 'лук'],
+    sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
     priceCooking: 0,
     price: 40, // ['40 руб за 1 шт.', '35 руб за 1 шт. замороженные'],    
   };
@@ -141,22 +126,44 @@ let sostavprice = {
 
 };
 
+ 
 
-for (let i=0; i < Menu.length; i++) {
-let sum = 0;
-    for (let j=0; j < Menu[i].sostav.length; j++) {
-        sum += sostavprice  [Menu[i].sostav[j]];
-    }
-    Menu[i].priceCooking = sum;
-};
+// подсчет себестоимости 
+Menu.forEach(function (item, index, arr) {
+    let priceCooking = item.sostav.reduce(function (sum, item, index, arr) {
+      return sum += sostavprice[item] ;
+  }, 0);
+ // console.log(priceCooking);
+ Menu.forEach(function (item) {
+let sebest = item.price - priceCooking
+console.log(sebest);
+priceCooking = sebest;
+},);
+ 
+});
 
-//sconsole.log(`Созданный массив из объектов блюд cо стоимостью: ${JSON.stringify(Menu)}`);
 
-let sumMenuLenght = Menu[i].reduce(function(price, priceCooking) {
+// вывод
+Menu.forEach(function (item, index, arr) {
+  console.log(`Блюдо: ${item.title} ; Себестоимость: ${item.priceCooking}`);
+});
+
+
+//  for (let i=0; i < Menu.length; i++) {
+//  let sum = 0;
+//      for (let j=0; j < Menu[i].sostav.length; j++) {
+//          sum += sostavprice  [Menu[i].sostav[j]];
+//      }
+//      Menu[i].priceCooking = sum;
+//  };
+
+//console.log(`Созданный массив из объектов блюд cо стоимостью: ${JSON.stringify(Menu)}`);
+
+//  let sumMenuLenght = Menu.reduce(function(price, priceCooking) {
    
-    return Menu[i].price - Menu[i].priceCooking;
-}, 0);
-console.log(sumMenuLenght);
+//      return 
+//      }, 0);
+//  console.log(sumMenuLenght);
 
 //for (let i = 0; i < Menu.length; i++) {
 //Menu[i].profit = Menu[i].price - Menu[i].priceCooking;
