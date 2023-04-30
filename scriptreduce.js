@@ -30,10 +30,11 @@ let food3 = {
     price:  120, //['120 руб за 200 гр.', '220 руб за 400 гр.'],    
   };
   let food6 = { 
-    title:'Пельмени',
-    sostav: ['Тесто', 'фаршговяжий', 'фаршсвиной', 'лук'],
+    title:'вареники с картошкой',
+    sostav: ['Тесто', 'картошка', 'лук'],
     priceCooking: 0,
-    price: 100, //['100 руб за 120 гр.', '200 руб за 240 гр.'],    
+    price: 100, //['100 руб за 120 гр.', '200 руб за 240 гр.'],   
+    veganfood: 'true'
   };
   let food7 = {      
     title:'Пюре с котлетой',
@@ -70,7 +71,8 @@ let food3 = {
     title:'Морс',
     sostav: ['Вода', 'ягода'],
     priceCooking: 0,
-    price: 50, //'50 руб за 200 гр.',    
+    price: 50, //'50 руб за 200 гр.',
+    veganfood: 'true'    
   };
   
   let food13 = {
@@ -95,7 +97,8 @@ let food3 = {
     title:'Морс',
     sostav: ['Вода', 'ягода'],
     priceCooking: 0,
-    price: 50, // '50 руб за 200 гр.',    
+    price: 50, // '50 руб за 200 гр.',
+    veganfood: 'true'    
   };
 
     
@@ -129,7 +132,7 @@ let sostavprice = {
  
 
 // подсчет себестоимости 
-Menu.forEach(function (item, index, arr) {
+Menu.map(function (item, index, arr) {
     let priceSostav = item.sostav.reduce(function (sum, item, index, arr) {
       return sum += sostavprice[item];
   }, 0);
@@ -138,12 +141,24 @@ Menu.forEach(function (item, index, arr) {
 let priceCooking = item.price - priceSostav
 console.log(`- Блюдо: ${item.title} ; Себестоимость: ${priceCooking}`);
 });
- 
-//});
 
 
-// вывод
-//Me0nu.forEach(function (item, index, arr) {
-//  console.log(`Блюдо: ${item.title} ; Себестоимость: ${item.priceCooking}`);
-//});
+
+  let foodVegan = Menu.some(function (item,index,arr) {
+    return item.veganfood;
+  
+});
+console.log(foodVegan);
+
+let foodVegan1 = Menu.every(function (item,index,arr) {
+    return item.veganfood;
+  
+});
+console.log(foodVegan1);
+
+let foodVegan2 = Menu.filter(function (item,index,arr) {
+    return item.veganfood;
+  
+});
+console.log(foodVegan2);
 
