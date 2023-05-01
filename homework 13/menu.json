@@ -1,0 +1,110 @@
+[    
+    {
+    "name":"Суп Шулэн",
+    "sostav": [
+        { "ingridient":"Лапша"},
+        
+        {"ingridient":"мясо"},
+        
+        {"ingridient":"картошка"}
+        
+    ],
+    "priceCooking": 0,
+    "priceM": 200
+    },
+    {
+    "name":"Буузы",
+    "sostav": [
+        { "ingridient":"Тесто"},
+        
+        {"ingridient":"фаршговяжий"},
+        
+        {"ingridient":"фаршсвиной"},
+       
+        {"ingridient":"лук"}
+    ],
+    "priceCooking": 0,
+    "priceM": 250
+    },
+    
+    {  
+    "name":"Цуйван",
+    "sostav": [ 
+        { "ingridient":"Лапша"},
+        
+        {"ingridient":"мясо"} ,
+        
+        {"ingridient":"перецболгарский"},
+        
+        {"ingridient":"лук"}    
+    ],
+    "priceCooking": 0,
+    "priceM": 150
+    },
+
+    { 
+    "name":"Морс",
+    "sostav": [
+        {"ingridient":"Вода"},
+    
+        {"ingridient":"ягода"}
+    ],
+    "priceCooking": 0,
+    "priceM": 50 
+    },
+
+    {
+    "name":"Борщ",
+    "sostav": [ 
+        { "ingridient":"Капуста"},
+        
+        {"ingridient":"мясокурицы"} ,
+        
+        {"ingridient":"свекла"},
+        
+        {"ingridient":"картошка"}    
+    ],
+    "priceCooking": 0,
+    "priceM": 120
+    },
+
+    { 
+    "name":"вареники с картошкой",
+    "sostav": [ 
+        { "ingridient":"Тесто"},
+        
+        {"ingridient":"картошка"}, 
+                
+        {"ingridient":"лук"}    
+    ],
+    "priceCooking": 0,
+    "priceM": 100
+    },
+
+    {      
+    "name":"Пюре с котлетой",
+    "sostav": [ 
+        { "ingridient":"картошка"},
+        
+        {"ingridient":"фаршговяжий"},
+        
+        {"ingridient":"подлив"},
+        
+        {"ingridient":"лук"}    
+    ],
+    "priceCooking": 0,
+    "priceM": 130
+    },
+    
+    {
+    "name":"Чай",
+    "sostav": [ 
+        { "ingridient":"Вода"},
+        
+        {"ingridient":"пакетикчая"} 
+        
+    ],
+    "priceCooking": 0,
+    "priceM": 35
+    }
+]   
