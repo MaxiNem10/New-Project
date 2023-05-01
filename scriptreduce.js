@@ -72,7 +72,7 @@ let food3 = {
     sostav: ['Вода', 'ягода'],
     priceCooking: 0,
     price: 50, //'50 руб за 200 гр.',
-    veganfood: 'true'    
+    veganfood: true    
   };
   
   let food13 = {
@@ -98,7 +98,7 @@ let food3 = {
     sostav: ['Вода', 'ягода'],
     priceCooking: 0,
     price: 50, // '50 руб за 200 гр.',
-    veganfood: 'true'    
+    veganfood: true    
   };
 
     
