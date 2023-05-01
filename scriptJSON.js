@@ -37,4 +37,23 @@ fetch("/menu.json")
        });
     });   
     console.log(foodVegan1);
-  }));
+
+    let onlyFoodVegan = menu.filter(function (item,index,arr) {
+      return item.sostav.every(function (item, index, arr) {
+          return ingridientsPrice[item.ingridient].Vegans;
+    
+     });
+  });
+  console.log(onlyFoodVegan);
+
+  //   onlyFoodVegan.forEach(function (item, index, arr) {
+  //   console.log(item);
+  //  });
+
+    let changeMenu = menu.map(function (item, index,arr) {
+      return item.name;
+    });
+    console.log(changeMenu);
+}))
+
+.catch(error => console.error(error));

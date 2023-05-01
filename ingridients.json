@@ -2,63 +2,63 @@
   {
     "Лапша": {
       "price": 20,
-      "Vegans": "true"
+      "Vegans": true
     },
     "мясо": {
       "price": 100,
-      "Vegans": "false"
+      "Vegans": false
     },
     "картошка": {
       "price": 30,
-      "Vegans": "true"
+      "Vegans": true
     },
     "Тесто": {
       "price": 25,
-      "Vegans": "false"
+      "Vegans": true
     },
     "фаршговяжий": {
       "price": 120,
-      "Vegans": "false"
+      "Vegans": false
     },
     "фаршсвиной": {
       "price": 110,
-      "Vegans": "false"
+      "Vegans": false
     },
     "лук": {
       "price": 20,
-      "Vegans": "true"
+      "Vegans": true
     },
     "перецболгарский": {
       "price": 15,
-      "Vegans": "true"
+      "Vegans": true
     },
     "Вода": {
       "price": 12,
-      "Vegans": "true"
+      "Vegans": true
     },
     "ягода": {
       "price": 30,
-      "Vegans": "true"
+      "Vegans": true
     },
     "Капуста": {
       "price": 18,
-      "Vegans": "true"
+      "Vegans": true
     },
     "мясокурицы": {
       "price": 70,
-      "Vegans": "false"
+      "Vegans": false
     },
     "пакетикчая": {
       "price": 5,
-      "Vegans": "true"
+      "Vegans": true
     },
     "подлив": {
       "price": 2,
-      "Vegans": "true"
+      "Vegans": true
     },
     "свекла": { 
     "price": 14, 
-    "Vegans": "true" 
+    "Vegans": true 
     }
   }
 
